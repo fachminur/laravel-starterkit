@@ -24,4 +24,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/menu', [App\Http\Controllers\MenuController::class, 'index'])->name('menu.index');
+    Route::get('/menuadd', [App\Http\Controllers\MenuController::class, 'create'])->name('menu.add');
+    Route::post('/menustore', [App\Http\Controllers\MenuController::class, 'store'])->name('menu.store');
 });

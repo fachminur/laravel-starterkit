@@ -9,7 +9,7 @@
 <!-- Main Content -->
 <section class="section">
     <div class="section-header">
-        <h1>Menu</h1>
+        <h1>{{ $title }}</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Components</a></div>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="section-body">
-        <h2 class="section-title">Menu</h2>
+        <h2 class="section-title">{{ $title }}</h2>
         <p class="section-lead">Components that can be used to make something bigger than the header.</p>
 
         <div class="row">
@@ -27,7 +27,7 @@
                     <div class="card-header">
                         <h4>Basic DataTables</h4>
                         <div style="display: block; float: right; margin-left: auto;">
-                            <a href="#" class="btn btn-icon icon-left btn-primary"><i class="fas fa-plus"></i> Add new</a>
+                            <a href="{{ route('menu.add') }}" class="btn btn-icon icon-left btn-primary"><i class="fas fa-plus"></i> Add</a>
                         </div>
                     </div>
                     <div class="card-body">
